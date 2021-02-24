@@ -1,0 +1,78 @@
+.graduation {
+  // width: calc(100% - 360px);
+  // overflow: hidden;
+  // height: 100vh;
+  // position: relative;
+  // margin-left: 360px;
+  // white-space: nowrap;
+
+  .tickTop {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+
+    .tickItem {
+      background-color: rgb(204, 204, 204);
+      width: 1px;
+      height: 5px;
+      display: inline-block;
+    }
+
+    .tickHeightItem {
+      background-color: rgb(204, 204, 204);
+      width: 1px;
+      height: 12px;
+      display: inline-block;
+      position: relative;
+
+      span{
+      	position: absolute;
+      	color: #888;
+      	top:18px;
+      	left: -4px;
+      	font-size: 12px;
+      }
+    }
+  }
+
+  .tickRight{
+  	width: 50px;
+    height: calc(100% - 56px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    flex-flow: column;
+
+    .tickItem {
+      background-color: rgb(204, 204, 204);
+      width: 5px;
+      height: 1px;
+      display: inline-block;
+    }
+
+    .tickHeightItem {
+      background-color: rgb(204, 204, 204);
+      width: 12px;
+      height: 1px;
+      display: inline-block;
+      position: relative;
+
+      span{
+      	color: #888;
+      	position: absolute;
+      	top:-5px;
+      	left: 20px;
+      	font-size: 12px;
+      }
+    }
+  }
+
+}
